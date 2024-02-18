@@ -1,0 +1,126 @@
+body {
+  background-color: black;
+}
+.container {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+.heading {
+  text-align: center;
+  margin-bottom: 1rem;
+  color: white;
+}
+
+.heading h2 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+}
+
+.heading h3 {
+  font-size: 3.5rem;
+  font-family: "Black Han Sans", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  overflow: hidden;
+}
+
+.heading h3 span {
+  display: inline-block;
+  transform: translateY(190%) rotate(10deg);
+  transition: all 1s;
+}
+
+.heading h3.is-active span {
+  transform: translateY(0) rotate(0);
+  transition: all 0.5s;
+}
+
+.swiper {
+  max-width: 500px;
+  /* max-height: 50vh; */
+  position: relative;
+  margin-bottom: 0.5rem;
+  /* min-width: 450px; */
+}
+
+.swiper-wrapper {
+  transition-timing-function: linear
+}
+
+.swiper .swiper-slide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.swiper .swiper-slide img {
+  width: 100%;
+}
+
+.navigation {
+  display: flex;
+  justify-content: space-between;
+}
+
+.bullet {
+  display: inline-block;
+  width: 100px;
+  
+  /* background: red; */
+  margin: 0.3rem;
+  cursor: pointer;
+  border: 4px solid transparent;
+  transition: all 0.3s;
+}
+
+.bullet.is-active {
+  border: 4px solid rgb(255, 255, 255);
+  /* border: 4px solid white; */
+  /* transform: translate(-5px, -5px); */
+  /* box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.466); */
+}
+
+.pagination {
+  display: flex;
+  justify-content: space-between;
+}
+
+.bullet img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+
+.box{
+  width: 50px;
+  height: 50px;
+  background-color: dodgerblue;
+  cursor: pointer;
+  position: absolute;
+  left: 2rem;
+  top: 2rem;
+}
+
+.swiper-button-next, .swiper-button-prev {
+  width: 22.4px;
+  height: 44px;
+
+}
+
+
+/* @media screen and (max-width: 900px) {
+  .swiper {
+    max-width: 90vw;
+  }
+} */
+
+/* .swiper-pagination-bullet{
+  background-color: black !important
+}
+ */
